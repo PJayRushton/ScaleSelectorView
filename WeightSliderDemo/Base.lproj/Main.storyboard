@@ -18,38 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much do you weigh?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN3-bt-5dS">
-                                <rect key="frame" x="32" y="110" width="311" height="74"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much do you weigh?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN3-bt-5dS">
+                                <rect key="frame" x="48" y="110" width="279" height="85"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
                                 <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBk-vC-fls">
-                                <rect key="frame" x="16" y="469" width="343" height="36"/>
-                                <color key="backgroundColor" red="0.94901961088180542" green="0.94901961088180542" blue="0.94901961088180542" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="sbI-ur-OEg"/>
-                                </constraints>
-                                <state key="normal" title="Save weight">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="18"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="saveWeightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v9R-AC-yQ9"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kg-yI-D61">
-                                <rect key="frame" x="160" y="245" width="54" height="38"/>
+                                <rect key="frame" x="160" y="256" width="54" height="38"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gzR-8w-hCF">
-                                <rect key="frame" x="16" y="309" width="343" height="50"/>
+                                <rect key="frame" x="16" y="320" width="343" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rI0-q3-5lo"/>
@@ -94,13 +76,36 @@
                                 </connections>
                             </collectionView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cP1-Ei-zI2" userLabel="BlueLine">
-                                <rect key="frame" x="187" y="299" width="2" height="70"/>
+                                <rect key="frame" x="187" y="310" width="2" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="13a-bQ-6fX"/>
                                     <constraint firstAttribute="width" constant="2" id="W8Y-z7-DoU"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBk-vC-fls" customClass="RoundedButton" customModule="WeightSliderDemo" customModuleProvider="target">
+                                <rect key="frame" x="16" y="480" width="343" height="36"/>
+                                <color key="backgroundColor" red="0.94901961088180542" green="0.94901961088180542" blue="0.94901961088180542" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="sbI-ur-OEg"/>
+                                </constraints>
+                                <state key="normal" title="Save weight">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="saveWeightButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v9R-AC-yQ9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -110,9 +115,9 @@
                             <constraint firstItem="gzR-8w-hCF" firstAttribute="centerY" secondItem="cP1-Ei-zI2" secondAttribute="centerY" id="41q-6s-iN2"/>
                             <constraint firstItem="XBk-vC-fls" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8e0-G3-mar"/>
                             <constraint firstItem="XBk-vC-fls" firstAttribute="top" secondItem="cP1-Ei-zI2" secondAttribute="bottom" constant="100" id="FRw-IZ-vLR"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HN3-bt-5dS" secondAttribute="trailing" constant="16" id="I0M-N3-xwX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HN3-bt-5dS" secondAttribute="trailing" constant="32" id="I0M-N3-xwX"/>
                             <constraint firstItem="0kg-yI-D61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LBe-9L-WAZ"/>
-                            <constraint firstItem="HN3-bt-5dS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="LKP-9I-cG5"/>
+                            <constraint firstItem="HN3-bt-5dS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="LKP-9I-cG5"/>
                             <constraint firstItem="cP1-Ei-zI2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aXy-8e-YSv"/>
                             <constraint firstItem="HN3-bt-5dS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="eTp-6p-Dex"/>
                             <constraint firstItem="gzR-8w-hCF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gM3-O1-elr"/>
@@ -122,6 +127,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="collectionView" destination="gzR-8w-hCF" id="48a-xF-upU"/>
+                        <outlet property="indicatorLineView" destination="cP1-Ei-zI2" id="Jab-ym-dWS"/>
                         <outlet property="weightLabel" destination="0kg-yI-D61" id="D7K-cg-flL"/>
                     </connections>
                 </viewController>
