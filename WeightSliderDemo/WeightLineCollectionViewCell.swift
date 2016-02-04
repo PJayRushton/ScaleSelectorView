@@ -10,4 +10,10 @@ import UIKit
 
 class WeightLineCollectionViewCell: UICollectionViewCell {
     
+    static let reuseIdentifier = "WeightLineCell"
+    
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    
+    let tallHeight: CGFloat = 40.0
+    let shortHeight: CGFloat = 20.0
 }
