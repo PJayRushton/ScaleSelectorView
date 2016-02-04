@@ -17,8 +17,8 @@ class WeightLogViewController: UIViewController {
     private let weightDefaultsKey = "UserWeight"
     private let maxWeight = 463
     private let itemWidth: CGFloat = 14.0
-    private let evenLineHeight: CGFloat = 30.0
-    private let oddLineHeight: CGFloat = 15.0
+    private let evenLineHeightPercentage: CGFloat = 0.6
+    private let oddLineHeightPercentage: CGFloat = 0.3
     
     private var weight: Int = 150 {
         didSet {
@@ -87,7 +87,7 @@ extension WeightLogViewController: UICollectionViewDataSource, UICollectionViewD
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCellWithReuseIdentifier(WeightLineCollectionViewCell.reuseIdentifier, forIndexPath: indexPath) as? WeightLineCollectionViewCell else { preconditionFailure() }
-        cell.heightConstraint.constant = indexPath.item % 2 == 0 ? evenLineHeight : oddLineHeight
+        cell.heightConstraint.constant = indexPath.item % 2 == 0 ? collectionView.bounds.size.height * evenLineHeightPercentage : collectionView.bounds.size.height * oddLineHeightPercentage
         
         return cell
     }

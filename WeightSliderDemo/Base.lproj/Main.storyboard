@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Weight Log View Controller-->
@@ -25,7 +26,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kg-yI-D61">
-                                <rect key="frame" x="160" y="256" width="54" height="38"/>
+                                <rect key="frame" x="160.5" y="256" width="53.5" height="38"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="32"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +80,6 @@
                                 <rect key="frame" x="187" y="310" width="2" height="70"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="13a-bQ-6fX"/>
                                     <constraint firstAttribute="width" constant="2" id="W8Y-z7-DoU"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -114,13 +114,14 @@
                             <constraint firstItem="0kg-yI-D61" firstAttribute="top" secondItem="HN3-bt-5dS" secondAttribute="bottom" constant="61" id="3Z7-tN-JVy"/>
                             <constraint firstItem="gzR-8w-hCF" firstAttribute="centerY" secondItem="cP1-Ei-zI2" secondAttribute="centerY" id="41q-6s-iN2"/>
                             <constraint firstItem="XBk-vC-fls" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8e0-G3-mar"/>
+                            <constraint firstItem="0kg-yI-D61" firstAttribute="centerX" secondItem="cP1-Ei-zI2" secondAttribute="centerX" id="AaJ-gv-LAJ"/>
                             <constraint firstItem="XBk-vC-fls" firstAttribute="top" secondItem="cP1-Ei-zI2" secondAttribute="bottom" constant="100" id="FRw-IZ-vLR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HN3-bt-5dS" secondAttribute="trailing" constant="32" id="I0M-N3-xwX"/>
-                            <constraint firstItem="0kg-yI-D61" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LBe-9L-WAZ"/>
                             <constraint firstItem="HN3-bt-5dS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="LKP-9I-cG5"/>
-                            <constraint firstItem="cP1-Ei-zI2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aXy-8e-YSv"/>
+                            <constraint firstItem="cP1-Ei-zI2" firstAttribute="height" secondItem="gzR-8w-hCF" secondAttribute="height" multiplier="1.4" id="UPI-6N-grG"/>
                             <constraint firstItem="HN3-bt-5dS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="eTp-6p-Dex"/>
                             <constraint firstItem="gzR-8w-hCF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gM3-O1-elr"/>
+                            <constraint firstItem="cP1-Ei-zI2" firstAttribute="centerX" secondItem="gzR-8w-hCF" secondAttribute="centerX" id="gOf-Ri-zdo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="XBk-vC-fls" secondAttribute="trailing" id="oWE-X4-YgM"/>
                         </constraints>
                     </view>
