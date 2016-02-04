@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A139FCFF1C62B76900FCA8ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139FCFE1C62B76900FCA8ED /* AppDelegate.swift */; };
-		A139FD011C62B76900FCA8ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139FD001C62B76900FCA8ED /* ViewController.swift */; };
+		A139FD011C62B76900FCA8ED /* WeightLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139FD001C62B76900FCA8ED /* WeightLogViewController.swift */; };
 		A139FD041C62B76900FCA8ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A139FD021C62B76900FCA8ED /* Main.storyboard */; };
 		A139FD061C62B76900FCA8ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A139FD051C62B76900FCA8ED /* Assets.xcassets */; };
 		A139FD091C62B76900FCA8ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A139FD071C62B76900FCA8ED /* LaunchScreen.storyboard */; };
+		A139FD111C62BC8D00FCA8ED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139FD101C62BC8D00FCA8ED /* Extensions.swift */; };
+		A139FD151C62C5BE00FCA8ED /* WeightLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139FD141C62C5BE00FCA8ED /* WeightLineCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A139FCFB1C62B76900FCA8ED /* WeightSliderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeightSliderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A139FCFE1C62B76900FCA8ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A139FD001C62B76900FCA8ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A139FD001C62B76900FCA8ED /* WeightLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightLogViewController.swift; sourceTree = "<group>"; };
 		A139FD031C62B76900FCA8ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A139FD051C62B76900FCA8ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A139FD081C62B76900FCA8ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A139FD0A1C62B76900FCA8ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A139FD101C62BC8D00FCA8ED /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A139FD141C62C5BE00FCA8ED /* WeightLineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightLineCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				A139FCFE1C62B76900FCA8ED /* AppDelegate.swift */,
-				A139FD001C62B76900FCA8ED /* ViewController.swift */,
 				A139FD021C62B76900FCA8ED /* Main.storyboard */,
+				A139FD001C62B76900FCA8ED /* WeightLogViewController.swift */,
+				A139FD141C62C5BE00FCA8ED /* WeightLineCollectionViewCell.swift */,
+				A139FD101C62BC8D00FCA8ED /* Extensions.swift */,
 				A139FD051C62B76900FCA8ED /* Assets.xcassets */,
 				A139FD071C62B76900FCA8ED /* LaunchScreen.storyboard */,
 				A139FD0A1C62B76900FCA8ED /* Info.plist */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A139FD011C62B76900FCA8ED /* ViewController.swift in Sources */,
+				A139FD151C62C5BE00FCA8ED /* WeightLineCollectionViewCell.swift in Sources */,
+				A139FD011C62B76900FCA8ED /* WeightLogViewController.swift in Sources */,
+				A139FD111C62BC8D00FCA8ED /* Extensions.swift in Sources */,
 				A139FCFF1C62B76900FCA8ED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +292,7 @@
 				A139FD0F1C62B76900FCA8ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
