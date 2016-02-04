@@ -15,6 +15,7 @@
 		A139FD111C62BC8D00FCA8ED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139FD101C62BC8D00FCA8ED /* Extensions.swift */; };
 		A139FD151C62C5BE00FCA8ED /* WeightLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139FD141C62C5BE00FCA8ED /* WeightLineCollectionViewCell.swift */; };
 		A139FD1B1C63FAD900FCA8ED /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A139FD1A1C63FAD900FCA8ED /* RoundedButton.swift */; };
+		A15525EA1C640558002E3CE9 /* WeightSelectorView.gif in Resources */ = {isa = PBXBuildFile; fileRef = A15525E91C640558002E3CE9 /* WeightSelectorView.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A139FD101C62BC8D00FCA8ED /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A139FD141C62C5BE00FCA8ED /* WeightLineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightLineCollectionViewCell.swift; sourceTree = "<group>"; };
 		A139FD1A1C63FAD900FCA8ED /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		A15525E91C640558002E3CE9 /* WeightSelectorView.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = WeightSelectorView.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				A139FD101C62BC8D00FCA8ED /* Extensions.swift */,
 				A139FD1A1C63FAD900FCA8ED /* RoundedButton.swift */,
 				A139FD051C62B76900FCA8ED /* Assets.xcassets */,
+				A15525E91C640558002E3CE9 /* WeightSelectorView.gif */,
 				A139FD071C62B76900FCA8ED /* LaunchScreen.storyboard */,
 				A139FD0A1C62B76900FCA8ED /* Info.plist */,
 			);
@@ -133,6 +136,7 @@
 			files = (
 				A139FD091C62B76900FCA8ED /* LaunchScreen.storyboard in Resources */,
 				A139FD061C62B76900FCA8ED /* Assets.xcassets in Resources */,
+				A15525EA1C640558002E3CE9 /* WeightSelectorView.gif in Resources */,
 				A139FD041C62B76900FCA8ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
