@@ -50,7 +50,9 @@ extension WeightLogViewController: UIScrollViewDelegate {
     }
     
     func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        snapToLine()
+        if !decelerate {
+            snapToLine()
+        }
     }
     
 }
