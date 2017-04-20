@@ -1,4 +1,4 @@
-# PJRSelectorView
+# ScaleSelectorView
 A cool custom spinner selector view
 
 Demo video:
